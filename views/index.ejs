@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang='es'>
+    <head>
+        <%- include('./templates/header')%>
+    </head>
+    <body style="background-color:lavenderblush ;"> 
+         <div class="container" style="background-color:aliceblue;  color: rgb(12, 12, 12);">
+            <h1 style="font-family: cursive;">Contabilidad Supermercado Los Alpes</h1>
+            <div class="card">
+                <div class="card-header">
+                    <%- include('./templates/navbar')%>
+                </div>
+                
+                
+                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" style="height: 500px;">
+                    
+                    <div class="carousel-indicators">
+                        
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    
+                    <div class="carousel-inner" style="height: 500px;">
+                       
+                      <div class="carousel-item active">
+                         
+                        <img src="https://static2.abc.es/media/sociedad/2018/02/28/pasillo-plasticos-supermercado-holanda-krjE--620x349@abc.jpg" class="d-block w-100 " style="position: absolute; top: 0; left: 0; min-height: 500px;"  >
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.blogs.es/0baa91/39f95492-38ee-4f16-92e1-ba5161f4a958/1366_2000.jpeg" class="d-block w-100 "  style="position: absolute; top: 0; left: 0; min-height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d500.epimg.net/cincodias/imagenes/2020/03/30/companias/1585560560_429214_1585560695_noticia_normal.jpg" class="d-block w-100 " style="position: absolute; top: 0; left: 0; min-height: 500px;">
+                        <div class="carousel-caption d-none d-md-block">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body">
+                    <%if(personas.length){%>
+                        <table class="table bm-2">
+                            <thead>
+                                <th>Código</th>
+                                <th>Apellidos</th>
+                                <th>Nombres</th>
+                                <th>Producto</th>
+                                <th>Teléfono</th>
+                                <th>Correo</th>
+                                <th>Género</th>
+                                <th>Valor</th>
+          
+                            </thead>
+                            <tbody>
+                              
+                                <% personas.forEach(persona => { %>
+                                    <tr>
+                                        <td><%= persona.code %></td>
+                                        <td><%= persona.lastName %></td>
+                                        <td><%= persona.name %></td>
+                                        <td><%= persona.city %></td>
+                                        <td><%= persona.phone %></td>
+                                        <td><%= persona.email %></td>
+                                        <td><%= persona.genAux %></td>
+                                        <td><%= persona.precio %></td>
+                                    
+                                    </tr>
+                                <%})%>
+                            </tbody>
+                        </table>
+                    <%}else{%>
+                        <h5></h5>
+                    <%}%>
+                    <a class="btn btn-primary" href="/insert" role="button" style="background-color:lightpink ; border: lightpink;">Haga su pedido</a>
+                   <div class="container-md">
+                    <div class="card text-center" id="caja">
+                      <%if(personas.length){%>
+                        <% let total = 0 %>
+                        <% personas.forEach(persona => { %>
+                          <% total = total + persona.total %>
+                      <div class="card-header">
+                        <h5 class="card-title">Total de Ventas</h5>                      </div>
+                      <div class="card-body">
+                        <p class="card-text">  <%= total %></p>
+                      </div>
+                      <div class="card-footer text-muted">
+                        
+                          <%= persona.fechaHora %>
+                          <%})%>
+                          <%}else{%>
+                            <%}%>
+                      </div>
+                    </div>
+                    
+
+                    
+                  </div> 
+
+                    <!--vvvvvvvvvvvvvvvvvv-->
+
+                  </div>
+
+                <div class="container-md">
+                  <div class="float-start">Madeleine Daniela Fonseca Bernal</div>
+                  <br>
+                  <div class="float-start">Electiva II</div>
+                  <br>
+                  <div class="float-start">Ingeniería de Sistemas y Computación</div>
+                  <br>
+                  <div class="float-start">Sogamoso</div>
+                  <br>
+                  <div class="float-start">2021</div>
+                  <br>
+              </div>
+            </div>
+
+        </div>
+        <%- include('./templates/footer')%>
+
+        
+    </body>
+</html>

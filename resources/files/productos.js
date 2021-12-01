@@ -1,0 +1,63 @@
+const productos = [{"code":"05","name":"Bebidas","Valor":"Pesos"},
+    {"code":"08","name":"Granos"},
+    {"code":"11","name":"Frutas y Verduras"},
+    {"code":"13","name":"Golosinas"}]
+    
+    
+
+
+    const tipos = [{"code":"05001","producto":"05","name":"Coca-Cola","Valor":"5000"},
+    {"code":"05002","producto":"05","name":"Pepsi","Valor":"4000"},
+    {"code":"05003","producto":"05","name":"Manzana","Valor":"2000"},
+    {"code":"05004","producto":"05","name":"Sprite","Valor":"9000"},
+    {"code":"05005","producto":"05","name":"J.Hit.Mora","Valor":"5000"},
+    {"code":"05006","producto":"05","name":"J.Hit.Naranja","Valor":"5500"},
+    {"code":"05007","producto":"05","name":"J.Hit.Lulo","Valor":"5000"},
+    {"code":"05008","producto":"05","name":"J.Hit.Tropical","Valor":"5600"},
+    {"code":"05009","producto":"05","name":"Hipinto","Valor":"5050"},
+    {"code":"05010","producto":"05","name":"Colombiana","Valor":"10000"},
+    {"code":"05011","producto":"05","name":"Ginger","Valor":"4500"},
+    {"code":"05012","producto":"05","name":"Agua","Valor":"5000"},
+    {"code":"08001","producto":"08","name":"Frijol","Valor":"6200"},
+    {"code":"08001","producto":"08","name":"Garbanzo","Valor":"5000"},
+    {"code":"08001","producto":"08","name":"Lenteja","Valor":"2500"},
+    {"code":"08001","producto":"08","name":"Arveja.V","Valor":"5000"},
+    {"code":"08001","producto":"08","name":"Arveja.A","Valor":"8700"},
+    {"code":"08001","producto":"08","name":"Fideos","Valor":"10500"},
+    {"code":"08001","producto":"08","name":"Conchas","Valor":"6200"},
+    {"code":"08001","producto":"08","name":"Tornillos","Valor":"6200"},
+    {"code":"11001","producto":"11","name":"Banano*12","Valor":"5000"},
+    {"code":"11002","producto":"11","name":"Manzana*12","Valor":"2300"},
+    {"code":"11003","producto":"11","name":"Pera*12","Valor":"5000"},
+    {"code":"11004","producto":"11","name":"Naranja*12","Valor":"3000"},
+    {"code":"11005","producto":"11","name":"Mandarina*12","Valor":"5000"},
+    {"code":"11006","producto":"11","name":"Melon*3","Valor":"5800"},
+    {"code":"11007","producto":"11","name":"Cebolla*12","Valor":"10100"},
+    {"code":"11008","producto":"11","name":"C.Cabezona*12","Valor":"5200"},
+    {"code":"11009","producto":"11","name":"Lechuga*5","Valor":"8200"},
+    {"code":"11010","producto":"11","name":"Tomate*12","Valor":"2500"},
+    {"code":"11011","producto":"11","name":"Pimenton*6","Valor":"5000"},
+    {"code":"11012","producto":"11","name":"Pepino*6","Valor":"6200"},
+    {"code":"11013","producto":"11","name":"Cilantro","Valor":"5000"},
+    {"code":"11014","producto":"11","name":"Limon*10","Valor":"8400"},
+    {"code":"11015","producto":"11","name":"Espinaca","Valor":"7200"},
+    {"code":"13001","producto":"13","name":"Papas-limon","Valor":"10300"},
+    {"code":"13002","producto":"13","name":"Papas-pollo","Valor":"5000"},
+    {"code":"13003","producto":"13","name":"Papas-Bq","Valor":"2600"},
+    {"code":"13004","producto":"13","name":"Papas-natural","Valor":"1500"},
+    {"code":"13005","producto":"13","name":"Chocorramo","Valor":"2500"},
+    {"code":"13006","producto":"13","name":"Gala","Valor":"13200"},
+    {"code":"13007","producto":"13","name":"Ramo","Valor":"2500"},
+    {"code":"13008","producto":"13","name":"Chocolatina-jet","Valor":"8700"},
+    {"code":"13009","producto":"13","name":"Chocolatina-jumbo","Valor":"4500"},
+    {"code":"13010","producto":"13","name":"Chcicharrones","Valor":"6500"},
+    {"code":"13011","producto":"13","name":"Shitos-Bq","Valor":"8900"},
+    {"code":"13012","producto":"13","name":"Shitos-Natural","Valor":"5000"},
+    {"code":"13013","producto":"13","name":"Choclitos","Valor":"5000"},
+    {"code":"13014","producto":"13","name":"Gallets-limon","Valor":"5000"},
+    {"code":"13015","producto":"13","name":"Mani","Valor":"10000"}];
+
+    module.exports.productos = productos;
+    module.exports.tipos = tipos;
+
+
